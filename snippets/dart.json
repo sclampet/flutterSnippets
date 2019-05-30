@@ -22,6 +22,8 @@
       "class _$1State extends State<$1> {",
       "\t@override",
       "\tWidget build(BuildContext context) {",
+      "\t\tfinal double height = MediaQuery.of(context).size.height;",
+      "\t\tfinal double width = MediaQuery.of(context).size.width;",
       "\t\treturn Container($0);",
       "\t}",
       "}"
@@ -36,6 +38,8 @@
       "class $1 extends StatelessWidget {",
       "\t @override",
       "\tWidget build(BuildContext context) {",
+      "\t\tfinal double height = MediaQuery.of(context).size.height;",
+      "\t\tfinal double width = MediaQuery.of(context).size.width;",
       "\t\treturn Container();",
       "\t}",
       "}"
@@ -58,6 +62,8 @@
       "",
       "\t@override",
       "\tWidget build(BuildContext context) {",
+      "\t\tfinal double height = MediaQuery.of(context).size.height;",
+      "\t\tfinal double width = MediaQuery.of(context).size.width;",
       "\t\treturn Scaffold(",
       "\t\t\tappBar: AppBar(",
       "\t\t\t\tleading: Container(),",
@@ -80,6 +86,8 @@
       "",
       "\t @override",
       "\tWidget build(BuildContext context) {",
+      "\t\tfinal double height = MediaQuery.of(context).size.height;",
+      "\t\tfinal double width = MediaQuery.of(context).size.width;",
       "\t\treturn Scaffold(",
       "\t\t\tappBar: AppBar(",
       "\t\t\t\tleading: Container(),",
@@ -112,6 +120,8 @@
       "",
       "\t @override",
       "\tWidget build(BuildContext context) {",
+      "\t\tfinal double height = MediaQuery.of(context).size.height;",
+      "\t\tfinal double width = MediaQuery.of(context).size.width;",
       "\t\treturn Scaffold(",
       "\t\t\tappBar: AppBar(",
       "\t\t\t\tleading: Container(),",
@@ -140,6 +150,8 @@
       "",
       "\t @override",
       "\tWidget build(BuildContext context) {",
+      "\t\tfinal double height = MediaQuery.of(context).size.height;",
+      "\t\tfinal double width = MediaQuery.of(context).size.width;",
       "\t\treturn Scaffold(",
       "\t\t\tappBar: AppBar(",
       "\t\t\t\tleading: Container(),",
@@ -164,6 +176,6 @@
       "\t\t\treturn Container();",
       "})"
     ],
-    "description": "Create a quick ScopedModelDecendant Widget."
+    "description": "Create a StateflessWidget with a ScopedModelDecendant Widget."
   }
 }
