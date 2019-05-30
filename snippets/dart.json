@@ -155,5 +155,15 @@
       "}"
     ],
     "description": "Create a StateflessWidget with a ScopedModelDecendant Widget."
+  },
+  "Quick ScopedModelDescendent ": {
+    "prefix": "scoped",
+    "body": [
+      "ScopedModelDescendant<MainModel>(",
+      "\tbuilder: (BuildContext context, Widget child, MainModel model) {",
+      "\t\t\treturn Container();",
+      "})"
+    ],
+    "description": "Create a StateflessWidget with a ScopedModelDecendant Widget."
   }
 }
