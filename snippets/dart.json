@@ -164,6 +164,6 @@
       "\t\t\treturn Container();",
       "})"
     ],
-    "description": "Create a StateflessWidget with a ScopedModelDecendant Widget."
+    "description": "Create a quick ScopedModelDecendant Widget."
   }
 }
