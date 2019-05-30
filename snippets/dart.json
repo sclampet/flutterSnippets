@@ -1,0 +1,37 @@
+{
+  "Create a new StatefulWidget ": {
+    "prefix": "stateful",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class $1 extends StatefulWidget {",
+      "\t @override",
+      "\tState<StatefulWidget> createState() {",
+      "\t\treturn _$1State();",
+      "\t}",
+      "}",
+      "",
+      "class _$1State extends State<$1> {",
+      "\t@override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn Container($0);",
+      "\t}",
+      "}"
+    ],
+    "description": "Create a new subclass of StatefulWidget and it’s associated State subclass."
+  },
+  "Create a new StatelessWidget ": {
+    "prefix": "stateless",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class $1 extends StatelessWidget {",
+      "\t @override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn Container();",
+      "\t}",
+      "}"
+    ],
+    "description": "Create a new subclass of StatelessWidget."
+  }
+}
