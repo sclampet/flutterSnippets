@@ -1,4 +1,12 @@
 {
+  "Print to console": {
+    "prefix": "log",
+    "body": [
+      "console.log('$1');",
+      "$2"
+    ],
+    "description": "Log output to console"
+  },
   "Create a new StatefulWidget ": {
     "prefix": "stateful",
     "body": [
@@ -33,5 +41,119 @@
       "}"
     ],
     "description": "Create a new subclass of StatelessWidget."
+  },
+  "Create a StatefulWidget with Scaffold and AppBar ": {
+    "prefix": "statefulScaff",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class $1 extends StatefulWidget {",
+      "\t @override",
+      "\tState<StatefulWidget> createState() {",
+      "\t\treturn _$1State();",
+      "\t}",
+      "}",
+      "",
+      "class _$1State extends State<$1> {",
+      "",
+      "\t@override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn Scaffold(",
+      "\t\t\tappBar: AppBar(",
+      "\t\t\t\tleading: Container(),",
+      "\t\t\t\ttitle: Container(),",
+      "\t\t\t\tactions: <Widget>[],",
+      "\t\t\t),",
+      "\t\t\tbody: Container(),",
+      "\t\t);",
+      "\t}",
+      "}"
+    ],
+    "description": "Create a new StatelessWidget with initial Scaffold and AppBar."
+  },
+  "Create a StatelessWidget with Scaffold and AppBar ": {
+    "prefix": "statelessScaff",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class $1 extends StatelessWidget {",
+      "",
+      "\t @override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn Scaffold(",
+      "\t\t\tappBar: AppBar(",
+      "\t\t\t\tleading: Container(),",
+      "\t\t\t\ttitle: Container(),",
+      "\t\t\t\tactions: <Widget>[],",
+      "\t\t\t),",
+      "\t\t\tbody: Container(),",
+      "\t\t);",
+      "\t}",
+      "}"
+    ],
+    "description": "Create a new StatelessWidget with initial Scaffold and AppBar."
+  },
+  "Create a StatefulWidget with a ScopedModelDescendent Widget ": {
+    "prefix": "statefulScoped",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "import 'package:scoped_model/scoped_model.dart';",
+      "",
+      "import 'package:journal/scoped-models/main.dart';",
+      "",
+      "class $1 extends StatefulWidget {",
+      "\t @override",
+      "\tState<StatefulWidget> createState() {",
+      "\t\treturn _$1State();",
+      "\t}",
+      "}",
+      "",
+      "class _$1State extends State<$1> {",
+      "",
+      "\t @override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn Scaffold(",
+      "\t\t\tappBar: AppBar(",
+      "\t\t\t\tleading: Container(),",
+      "\t\t\t\ttitle: Container(),",
+      "\t\t\t\tactions: <Widget>[],",
+      "\t\t\t),",
+      "\t\t\tbody: ScopedModelDescendant<MainModel>(",
+      "\t\t\t\tbuilder: (BuildContext context, Widget child, MainModel model) {",
+      "\t\t\t\t\treturn Container();",
+      "\t\t\t\t})",
+      "\t\t);",
+      "\t}",
+      "}"
+    ],
+    "description": "Create a StatefulWidget with a ScopedModelDecendant Widget."
+  },
+  "Create a StatelessWidget with a ScopedModelDescendent Widget ": {
+    "prefix": "statelessScoped",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "import 'package:scoped_model/scoped_model.dart';",
+      "",
+      "import 'package:journal/scoped-models/main.dart';",
+      "",
+      "class $1 extends StatelessWidget {",
+      "",
+      "\t @override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn Scaffold(",
+      "\t\t\tappBar: AppBar(",
+      "\t\t\t\tleading: Container(),",
+      "\t\t\t\ttitle: Container(),",
+      "\t\t\t\tactions: <Widget>[],",
+      "\t\t\t),",
+      "\t\t\tbody: ScopedModelDescendant<MainModel>(",
+      "\t\t\t\tbuilder: (BuildContext context, Widget child, MainModel model) {",
+      "\t\t\t\t\treturn Container();",
+      "\t\t\t\t})",
+      "\t\t);",
+      "\t}",
+      "}"
+    ],
+    "description": "Create a StateflessWidget with a ScopedModelDecendant Widget."
   }
 }
